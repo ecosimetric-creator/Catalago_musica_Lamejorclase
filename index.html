@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera chamba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Música</h1>
+        <p>Mis Artistas Favoritos</p>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Agregar Nuevo Artista</h2>
+            <form id="artist-form">
+                <div class="form-group">
+                    <input type="text" id="artist-name" placeholder="Nombre del artista" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="artist-genre" placeholder="Género musical" required>
+                </div>
+                <div class="form-group">
+                    <label for="artist-photo" style="display: block; margin-bottom: 8px; color: #b3b3b3;">Sube una foto del artista:</label>
+                    <input type="file" id="artist-photo" accept="image/*" required>
+                </div>
+                <button type="submit">Guardar Artista</button>
+            </form>
+        </div>
+
+        <div class="catalog">
+            <h2>Mi Colección</h2>
+            <div id="artist-grid" class="grid">
+                <!-- Los artistas aparecerán aquí mediante JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
